@@ -1,0 +1,108 @@
+body {
+	font-size: 20px;
+	font-family: Inter;
+}
+
+.dayNight {
+	background-color: #232323; 
+	color: white;
+}
+
+.inputNight{
+	background-color: #232323; 
+	color:white;
+	box-shadow: 0 0 15px rgba(0,0,0, 0.4);
+}
+
+.listNight {
+	box-shadow: 0 0 15px rgba(0,0,0, 0.4);
+}
+
+li {
+	list-style-type: none; 
+	margin-left: -20px; 
+}
+
+li:first-letter {
+    text-transform:capitalize;
+}
+
+.main {
+	display: flex;
+	min-height: 100vh;
+	justify-content: center;
+}
+
+.mainSection {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+input {
+	border-radius: 10px; 
+	border: none; 
+	height: auto;
+	outline: none; 
+	padding: 10px 15px 10px 15px; 
+	margin-top: 20px;
+	font-size: 20px; 
+	box-shadow: 0 0 20px rgba(0,0,0,0.1); 
+}
+
+/*list*/
+.list {
+	display: flex; 
+	text-align: left;
+	height: 600px; 
+	max-width: 350px;
+	overflow: auto;
+	padding: 20px 15px 0px 10px; 
+
+	border-radius: 10px; 
+	box-shadow: 0 0 20px rgba(0,0,0,0.1); 
+} 
+
+.btn-remove {
+  padding: 5px 10px;
+  background-color: red;
+  cursor: pointer;
+}
+
+ul {
+	min-width: 100%; 
+}
+
+li {
+	margin-bottom: 19px;
+	font-size: 20px;   
+}
+
+.footerBtns {
+	display: flex; 
+	justify-content: space-between;
+	margin-bottom: 30px;
+	box-shadow: 0 0 20px rgba(0,0,0,0.1); 
+	border-radius: 10px; 
+	padding: 10px 0px 10px 0px; 
+}
+
+.clean {
+	margin-left: 20px;
+	cursor: pointer;
+	color: grey;
+	text-shadow: 0 0 20px rgba(0,0,0,0.1); 
+
+}
+
+.view {
+	opacity: 0.6;
+	margin-right: 20px;
+}
+
+@font-face{
+	font-family: "Inter";
+	src:url(fonts/Inter/Inter.ttf);
+}
+
