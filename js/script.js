@@ -1,27 +1,23 @@
 $(function(){
-
 	// input
 	$('input').keydown(function(e){
 		if(e.keyCode === 13 || e.keyCode === 9) {
-			$("#ulList").append('<li>' + this.value + '</li>')
+
+			let content = this.value; 
+
+			if (content.length > 0) {
+				$("#ulList").append('<li>' + this.value + '</li>')
+			}		
 
 			this.value = ''
 		}; 
 	}); 
 
-	// remove element
+	// remove/mark element
 	$('#ulList').click(function(event) {
-	    $(event.target).closest('li').remove()
-	   
-	    // $(event.target).closest('li').click(function(){
-	    // 	 $(this).toggleClass("done")
-	    // 	// console.log('test');
-	    // })
-
-	    // $(event.target).closest('li').click(function(){
-	    // 	$(this).addClass('done')
-	    // })
-
+	    // $(event.target).closest('li').remove()
+	   $(event.target).closest('li').toggleClass("line")
+	
 	});
 
 	// clear list
@@ -39,5 +35,6 @@ $(function(){
 		// $('#input').removeClass('inputClass')
 		$('#footerBtnsParent').toggleClass('listNight')
 		$('#listParent').toggleClass('listNight')
+		$('.clean').toggleClass('cleanNight')
 	})
 })

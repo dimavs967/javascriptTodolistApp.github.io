@@ -1,26 +1,46 @@
 body {
 	font-size: 20px;
 	font-family: Inter;
+	transition: all 0.3s ease;
 }
 
 .dayNight {
 	background-color: #232323; 
 	color: white;
+	transition: all 0.3s ease;
 }
 
 .inputNight{
 	background-color: #232323; 
 	color:white;
-	box-shadow: 0 0 15px rgba(0,0,0, 0.4);
+	box-shadow: 0 0 20px rgba(0,0,0, 0.4);
+	transition: all 0.3s ease;
 }
 
+.line {
+	text-decoration: line-through;
+	color: #0071e3; 
+	transition: all 0.1s ease;
+}
+
+/*.line:before {
+	content: ''; 
+	text-align: right;
+ 	border:none;
+ 	color: #0071e3; 
+}*/
+
 .listNight {
+	border-radius: 10px;
 	box-shadow: 0 0 15px rgba(0,0,0, 0.4);
 }
 
 li {
 	list-style-type: none; 
-	margin-left: -20px; 
+	margin-left: -25px; 
+	padding: 4px 3px 4px 10px;
+	border-radius: 6px;
+	transition: all 0.1s ease;
 }
 
 li:first-letter {
@@ -37,38 +57,36 @@ li:first-letter {
 	text-align: center;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: flex-start;
+	min-height: 90vh; 
 }
 
 input {
 	border-radius: 10px; 
+	font-weight: 380;
 	border: none; 
 	height: auto;
 	outline: none; 
-	padding: 10px 15px 10px 15px; 
-	margin-top: 20px;
+	padding: 11px 15px 10px 15px; 
+	margin-top: 15px;
 	font-size: 20px; 
 	box-shadow: 0 0 20px rgba(0,0,0,0.1); 
+	margin-bottom: 20px; 
+	transition: all 0.3s ease;
 }
 
 /*list*/
 .list {
 	display: flex; 
 	text-align: left;
-	height: 600px; 
+	height: 77vh;
 	max-width: 350px;
 	overflow: auto;
 	padding: 20px 15px 0px 10px; 
-
+	
 	border-radius: 10px; 
 	box-shadow: 0 0 20px rgba(0,0,0,0.1); 
 } 
-
-.btn-remove {
-  padding: 5px 10px;
-  background-color: red;
-  cursor: pointer;
-}
 
 ul {
 	min-width: 100%; 
@@ -76,13 +94,17 @@ ul {
 
 li {
 	margin-bottom: 19px;
-	font-size: 20px;   
+	font-size: 22px;   
+}
+
+.footer {
+	margin-top:20px;
 }
 
 .footerBtns {
 	display: flex; 
 	justify-content: space-between;
-	margin-bottom: 30px;
+	margin-bottom: 0px;
 	box-shadow: 0 0 20px rgba(0,0,0,0.1); 
 	border-radius: 10px; 
 	padding: 10px 0px 10px 0px; 
@@ -93,7 +115,11 @@ li {
 	cursor: pointer;
 	color: grey;
 	text-shadow: 0 0 20px rgba(0,0,0,0.1); 
+}
 
+.cleanNight {
+	color: #0071e3; 
+	opacity: 0.8;
 }
 
 .view {
@@ -105,4 +131,3 @@ li {
 	font-family: "Inter";
 	src:url(fonts/Inter/Inter.ttf);
 }
-
