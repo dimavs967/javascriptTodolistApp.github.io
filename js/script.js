@@ -21,7 +21,7 @@ $(function(){
 		}; 
 	}); 
 
-	// remove/mark element
+	// mark element
 	$('#ulList').click(function(event) {
 	   $(event.target).closest('li').toggleClass("line")
 	   toLocal()
@@ -42,7 +42,7 @@ $(function(){
 	var changed = !!(parseInt(localStorage.getItem('changed')) || 0);
 
 	$('.view').click(function(){
-		
+
 		changed = !changed;
 		localStorage.setItem('changed', changed ? 1 : 0);
 

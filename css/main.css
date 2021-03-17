@@ -1,34 +1,31 @@
 body {
 	font-size: 20px;
 	font-family: Inter;
-	/*transition: all 0.3s ease;*/
+
+	transition: all 0.3s ease;
 }
 
 .dayNight {
 	background-color: #232323; 
 	color: white;
-	/*transition: all 0.3s ease;*/
+
+	transition: all 0.3s ease;
 }
 
 .inputNight{
 	background-color: #232323; 
 	color:white;
 	box-shadow: 0 0 20px rgba(0,0,0, 0.4);
-	/*transition: all 0.3s ease;*/
+
+	transition: all 0.3s ease;
 }
 
 .line {
 	text-decoration: line-through;
 	color: #0071e3; 
-	/*transition: all 0.1s ease;*/
-}
 
-/*.line:before {
-	content: ''; 
-	text-align: right;
- 	border:none;
- 	color: #0071e3; 
-}*/
+	transition: all 0.1s ease;
+}
 
 .listNight {
 	border-radius: 10px;
@@ -72,7 +69,8 @@ input {
 	font-size: 20px; 
 	box-shadow: 0 0 20px rgba(0,0,0,0.1); 
 	margin-bottom: 20px; 
-	/*transition: all 0.3s ease;*/
+
+	transition: all 0.3s ease;
 }
 
 /*list*/
