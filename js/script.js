@@ -1,5 +1,11 @@
 $(function(){
-	// input
+	// localStorage
+	function toLocal () {
+		let todos; 
+		todos = ulList.innerHTML; 
+		localStorage.setItem('todos', todos);
+	}
+
 	$('input').keydown(function(e){
 		if(e.keyCode === 13 || e.keyCode === 9) {
 
@@ -9,15 +15,16 @@ $(function(){
 				$("#ulList").append('<li>' + this.value + '</li>')
 			}		
 
+			toLocal()
+
 			this.value = ''
 		}; 
 	}); 
 
 	// remove/mark element
 	$('#ulList').click(function(event) {
-	    // $(event.target).closest('li').remove()
 	   $(event.target).closest('li').toggleClass("line")
-	
+	   toLocal()
 	});
 
 	// clear list
@@ -26,15 +33,35 @@ $(function(){
 		while (ulList.firstChild) {
 	  		ulList.removeChild(ulList.firstChild);
 	  	}
+
+	  	toLocal()
 	})
 
 	// day/night
+	
+	var changed = !!(parseInt(localStorage.getItem('changed')) || 0);
+
 	$('.view').click(function(){
-		$('body').toggleClass('dayNight')
-		$('#input').toggleClass('inputNight')
-		// $('#input').removeClass('inputClass')
-		$('#footerBtnsParent').toggleClass('listNight')
-		$('#listParent').toggleClass('listNight')
-		$('.clean').toggleClass('cleanNight')
+		
+		changed = !changed;
+		localStorage.setItem('changed', changed ? 1 : 0);
+
+		$('body').toggleClass('dayNight', changed);
+		$('#input').toggleClass('inputNight', changed)
+		$('#footerBtnsParent').toggleClass('listNight', changed)
+		$('#listParent').toggleClass('listNight', changed)
+		$('.clean').toggleClass('cleanNight', changed)
+
 	})
+		$('body').toggleClass('dayNight', changed);
+		$('#input').toggleClass('inputNight', changed)
+		$('#footerBtnsParent').toggleClass('listNight', changed)
+		$('#listParent').toggleClass('listNight', changed)
+		$('.clean').toggleClass('cleanNight', changed)
+		
+	// get data
+	if (localStorage.getItem('todos')) {
+		ulList.innerHTML = localStorage.getItem('todos')
+	}
+
 })
