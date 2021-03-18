@@ -1,40 +1,37 @@
 body {
-	font-size: 20px;
+	font-size: 22px;
 	font-family: Inter;
-
+	font-weight:600;
 	transition: all 0.3s ease;
 }
 
 .dayNight {
-	background-color: #232323; 
+	background-color: #232323;
 	color: white;
-
 	transition: all 0.3s ease;
 }
 
 .inputNight{
-	background-color: #232323; 
+	background-color: #232323;
 	color:white;
-	box-shadow: 0 0 20px rgba(0,0,0, 0.4);
-
+	box-shadow: 0 0 20px rgba(0,0,0, 0.3);
 	transition: all 0.3s ease;
 }
 
 .line {
 	text-decoration: line-through;
-	color: #0071e3; 
-
+	color: #0071e3;
 	transition: all 0.1s ease;
 }
 
 .listNight {
 	border-radius: 10px;
-	box-shadow: 0 0 15px rgba(0,0,0, 0.4);
+	box-shadow: 0 0 15px rgba(0,0,0, 0.3);
 }
 
 li {
-	list-style-type: none; 
-	margin-left: -25px; 
+	list-style-type: none;
+	margin-left: -25px;
 	padding: 4px 3px 4px 10px;
 	border-radius: 6px;
 	transition: all 0.2s ease;
@@ -55,48 +52,46 @@ li:first-letter {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
-	min-height: 90vh; 
+	min-height: 95vh;
 }
 
 input {
-	border-radius: 10px; 
-	font-weight: 420;
-	border: none; 
+	border-radius: 10px;
+	border: none;
+	width: 100%;
 	height: auto;
-	outline: none; 
-	padding: 11px 15px 10px 15px; 
-	margin-top: 15px;
-	font-size: 20px; 
-	box-shadow: 0 0 20px rgba(0,0,0,0.1); 
-	margin-bottom: 20px; 
-
+	outline: none;
+	padding: 12px 25px 12px 25px;
+	margin-top: 10px;
+	box-shadow: 0 0 20px rgba(0,0,0,0.2);
+	margin-bottom: 10px;
 	transition: all 0.3s ease;
+	font-weight:600;
 }
 
 /*list*/
 .list {
-	display: flex; 
+	display: flex;
 	text-align: left;
-	height: 72vh;
-	max-width: 350px;
+	height: 77vh;
+	max-width: auto;
 	overflow: auto;
-	padding: 20px 15px 0px 10px; 
-	border-radius: 10px; 
-	box-shadow: 0 0 20px rgba(0,0,0,0.1); 
-} 
+	padding: 25px 15px 0px 15px;
+	border-radius: 10px;
+	box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
 
 ul {
-	min-width: 100%; 
+	min-width: 100%;
 }
 
 li {
-	margin-bottom: 19px;
-	font-size: 22px; 
-	font-weight: 420;  
+	margin-bottom: 17px;
+	font-size: 22px;
 }
 
 .footer {
-	margin-top:20px;
+	margin-top:10px;
 }
 
 .footerBtns {
@@ -105,14 +100,14 @@ li {
 	margin-bottom: 0px;
 	box-shadow: 0 0 20px rgba(0,0,0,0.2); 
 	border-radius: 10px; 
-	padding: 10px 0px 10px 0px; 
+	padding: 13px 0px 13px 0px;
 }
 
 .clean {
 	margin-left: 20px;
 	cursor: pointer;
 	color: grey;
-	text-shadow: 0 0 20px rgba(0,0,0,0.1); 
+	text-shadow: 0 0 20px rgba(0,0,0,0.1);
 }
 
 .cleanNight {
