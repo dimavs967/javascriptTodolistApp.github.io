@@ -26,7 +26,7 @@ body {
 
 .listNight {
 	border-radius: 10px;
-	box-shadow: 0 0 15px rgba(0,0,0, 0.3);
+	/* box-shadow: 0 0 15px rgba(0,0,0, 0.3); */
 }
 
 li {
@@ -64,6 +64,7 @@ input {
 	padding: 12px 25px 12px 25px;
 	margin-top: 10px;
 	box-shadow: 0 0 20px rgba(0,0,0,0.2);
+	background-color: #fff;
 	margin-bottom: 10px;
 	transition: all 0.3s ease;
 	font-weight:600;
@@ -78,7 +79,7 @@ input {
 	overflow: auto;
 	padding: 25px 15px 0px 15px;
 	border-radius: 10px;
-	box-shadow: 0 0 20px rgba(0,0,0,0.2);
+	/* box-shadow: 0 0 20px rgba(0,0,0,0.2); */
 }
 
 ul {
@@ -98,7 +99,7 @@ li {
 	display: flex; 
 	justify-content: space-between;
 	margin-bottom: 0px;
-	box-shadow: 0 0 20px rgba(0,0,0,0.2); 
+	/* box-shadow: 0 0 20px rgba(0,0,0,0.2);  */
 	border-radius: 10px; 
 	padding: 13px 0px 13px 0px;
 }
